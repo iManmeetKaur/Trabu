@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Login" />
+        <item
+            android:id="@+id/nav_cashback"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Cashback" />
+        <item
+            android:id="@+id/nav_current_avail"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Current Availability" />
+        <item
+            android:id="@+id/nav_bus_position"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Bus Position" />
+        <item
+            android:id="@+id/nav_book_a_bus"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Book a Bus" />
+        <item
+            android:id="@+id/nav_bus_stop_alarm"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Bus Stop Alarm" />
+        <item
+            android:id="@+id/nav_refunds"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Refunds" />
+        <item
+            android:id="@+id/nav_rescheduled_buses"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Rescheduled Buses" />
+        <item
+            android:id="@+id/nav_diverted_buses"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Diverted Buses" />
+        <item
+            android:id="@+id/nav_helpline"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Helpline" />
+        <item
+            android:id="@+id/nav_facts"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Facts About Bus Travel" />
+        <item
+            android:id="@+id/nav_faqs"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Bus FAQs" />
+        <item
+            android:id="@+id/nav_bus_tips"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Bus Tips" />
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Share" />
+    </group>
+
+
+</menu>

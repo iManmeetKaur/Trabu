@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorControlHighlight"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.terx.trabu_1.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RelativeLayout
+            android:id="@+id/RelativeLayoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:elevation="7dp"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="0dp">
+
+            <Button
+                android:id="@+id/search"
+                style="@android:style/Widget.Material.Light.CompoundButton.Star"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_toStartOf="@+id/seatCalender"
+
+                android:onClick="onSearchBus"
+                android:text="Search Bus"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/trackBus"
+                style="@android:style/Widget.Material.Light.CompoundButton.Star"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/search"
+
+                android:text="Track Bus"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/seatCalender"
+                style="@android:style/Widget.Material.Light.CompoundButton.Star"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/trackBus"
+                android:layout_toEndOf="@+id/runStatus"
+
+                android:text="Seat Calender"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/runStatus"
+                style="@android:style/Widget.Material.Light.CompoundButton.Star"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/search"
+
+                android:text="Running Status"
+                android:textAlignment="center" />
+
+        </RelativeLayout>
+
+        <Space
+            android:id="@+id/space"
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:layout_below="@+id/RelativeLayoutBtn" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/space"
+            android:background="@android:color/white"
+            android:elevation="7dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/busBYRoute"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="Buses By Route" />
+
+            <Button
+                android:id="@+id/localPrivate"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="Local &amp; Private" />
+
+            <Button
+                android:id="@+id/seatMap"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="Seat Map" />
+
+            <Button
+                android:id="@+id/busMap"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:text="Bus Stops" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/space"
+            android:background="@android:color/white"
+            android:elevation="7dp"
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <Button
+                android:id="@+id/busBYRoute"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="Buses By Route" />
+
+            <Button
+                android:id="@+id/localPrivate"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="Local &amp; Private" />
+
+            <Button
+                android:id="@+id/seatMap"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+
+                android:text="Seat Map" />
+
+            <Button
+                android:id="@+id/busMap"
+                style="@style/Widget.AppCompat.ActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+
+                android:text="Bus Stops" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by TERX"
+            tools:layout_editor_absoluteX="149dp"
+            tools:layout_editor_absoluteY="570dp" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

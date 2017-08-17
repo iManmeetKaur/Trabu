@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.terx.trabu_1.AcceptActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:isScrollContainer="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="33dp"
+            android:text="Terms &amp; Condtions"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button"
+            android:textSize="30sp"
+            tools:layout_editor_absoluteX="77dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginTop="16dp"
+            android:focusable="auto"
+            android:isScrollContainer="false">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/textView"
+                    android:layout_marginTop="17dp"
+                    android:layout_weight="2.31"
+                    android:elevation="2dp"
+                    android:fadeScrollbars="true"
+                    android:isScrollContainer="false"
+                    android:scrollbars="vertical"
+                    android:text="@string/desc"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/apt_button"
+            android:layout_alignParentStart="true"
+            android:elevation="2dp"
+            android:gravity="center"
+            android:onClick="OnAccept"
+            android:text="I Accept the Terms and Conditions for TRABU."
+            android:textAppearance="@style/TextAppearance.AppCompat.Notification.Time" />
+
+        <Button
+            android:id="@+id/apt_button"
+            style="@android:style/Widget.Material.Light.Button.Borderless.Small"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#f7931d"
+            android:elevation="9dp"
+            android:onClick="OnAcceptBtn"
+            android:text="Accept"
+            android:textAlignment="center" />
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

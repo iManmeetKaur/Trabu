@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Trabu_1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="title_activity_splash_screen">SplashScreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="desc">If you sell products (physical or digital), you’ll want Terms and Conditions for your store. Having the agreement in place will help you:  Dictate how different aspects of transactions will be handled Inform users about acceptable payment terms Inform users about your shipping policies Inform users about your returns and refunds policies. You can also do this through a separate agreement, called a Return/Refund Policy, that you can reference in the Terms &amp; Conditions agreement. Let’s look at an example: the Limitation of Liability of Your Products clause.  No matter what kind of goods you sell, best practices direct you to present any warranties you are disclaiming and liabilities you are limiting in a way that your customers will notice.  You’ve probably noticed that these clauses in contracts are always in blocks of all-caps text and really do stand out from the rest of the document.  Apple iTunes, which probably isn’t dealing with high-liability goods, includes the following boilerplate language in its Terms agreement to deal with limiting liability and disclaiming warranties.  This exact language is used across multiple industries, businesses, and apps in order to legally disclaim warranties and limit liability.  Include the words “AS IS” for items and “AS AVAILABLE” if you provide any sort of service that may not be available 100% of the time. The final section is usually included verbatim as:</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>

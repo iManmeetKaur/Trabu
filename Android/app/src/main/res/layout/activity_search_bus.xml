@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.terx.trabu_1.SearchBus">
+
+    <RelativeLayout
+        android:layout_width="395dp"
+        android:layout_height="587dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        >
+
+        <EditText
+            android:id="@+id/dest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/src"
+            android:layout_below="@+id/src"
+            android:layout_marginTop="23dp"
+            android:ems="10"
+            android:hint="Destination"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/src"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="83dp"
+            android:ems="10"
+            android:hint="Source"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/dest"
+            android:layout_alignStart="@+id/dest"
+            android:layout_below="@+id/dest"
+            android:layout_marginTop="28dp"
+            android:onClick="OnSearch"
+            android:text="Search" />
+
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
