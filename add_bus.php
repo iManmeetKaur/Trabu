@@ -165,6 +165,12 @@
 													<input type="text" name="insurance" ><br><br>
 													<label>Valid upto:</label>
 													<input type="number" name="insurance expiry date" ><br><br>
+													<label>Bus Service:</label>
+													<input type="number" name="bus_service" ><br><br>
+													<label>Employee id:</label>
+													<input type="number" name="emp id" ><br><br>
+													<label>Employee name:</label>
+													<input type="text" name="emp name" ><br><br>
 													<input type="submit" name="Submit" value="Add Question">
 												</div>
 											</center>
