@@ -24,7 +24,7 @@
             android:layout_marginTop="23dp"
             android:ems="10"
             android:hint="Destination"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"/>
 
         <EditText
             android:id="@+id/src"
@@ -35,7 +35,7 @@
             android:layout_marginTop="83dp"
             android:ems="10"
             android:hint="Source"
-            android:inputType="textPersonName" />
+            android:inputType="textPersonName"/>
 
         <Button
             android:id="@+id/search"
@@ -47,6 +47,14 @@
             android:layout_marginTop="28dp"
             android:onClick="OnSearch"
             android:text="Search" />
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/mapView2"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/search"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="27dp" />
 
 
     </RelativeLayout>
