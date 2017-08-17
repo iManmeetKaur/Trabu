@@ -57,6 +57,16 @@
 	.container_card {
 	    padding: 2px 16px;
 	}
+	label{
+	    display:inline-block;
+	    width:150px;
+	    font-size:17px;
+	    font-style:bold;
+	    color:#f7931d;
+	    text-transform:uppercase;
+	    font-weight:500;
+	    margin:0px;
+	}
 </style>
 </head> 
 <body>
@@ -144,13 +154,13 @@
 
 						<!--Main Body-->
 						<div class="card" style="width:auto; height:auto; background-color:#231f20; float:center;">
-							  <div class="container_card" style="font-size:18px;color:#ffffff;">
+							  <div class="container_card" style="font-size:18px;color:#f7931d;">
 							    <center><b>Add Bus</b></center>
 							    Add a new bus to your fleet... 
 							    <?php 
 							    	require "connect.php";
 							    ?>
-									    <form style="padding-top:20px;" action="addquestionact.php" method="POST">
+									    <form style="padding-top:20px;" action="add_bus.php" method="POST">
 											<center>
 												<div class="view-box">	
 													<label>Bus Id:</label>
@@ -171,10 +181,29 @@
 													<input type="number" name="emp id" ><br><br>
 													<label>Employee name:</label>
 													<input type="text" name="emp name" ><br><br>
-													<input type="submit" name="Submit" value="Add Question">
+													<input type="submit" name="Submit" value="Add Bus" style="background:#f7931d;">
 												</div>
 											</center>
 										</form>
+
+										<?php  
+
+											$bus_id=$_POST["bus_id"];
+											$bus_no=$_POST["bus_no"];
+											$name=$_POST["name"];
+											$total_seats=$_POST["total_seats"];
+											$insurance=$_POST["insurance"];
+											$insurance_expiry_date=$_POST["insurance expiry date"];
+											$bus_service=$_POST["bus_service"];
+											$emp_id=$_POST["emp id"];
+											$emp_name=$_POST["emp name"];
+
+											$con->query("INSERT INTO `bus`(`bus_id`, `bus_no`, `name`, `total seats`, `insurance`, `insurance expiry date`, `bus_service`, `emp id`, `emp name`) VALUES ('$bus_id','$bus_no','$name','$total_seats','$insurance','$insurance_expiry_date','$bus_service','$emp_id','$emp_name')");
+
+											echo "
+											<script> alert('You have added a bus to your fleet successfully.')</script>" ;
+
+											?>
 							  	</div>
 						</div>
 
